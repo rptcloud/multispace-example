@@ -64,15 +64,15 @@ resource "tfe_workspace_run" "downstream" {
 
   apply {
     # Fire and Forget
-    wait_for_run = true
+    wait_for_run = false
     # auto-apply
-    manual_confirm = false
+    manual_confirm = true
   }
 
- # destroy {
+ destroy {
     # Wait for destroy before doing anything else
- #   wait_for_run = true
+    wait_for_run = true
     # auto-apply
- #   manual_confirm = false
- # }
+    manual_confirm = true
+  }
 }
