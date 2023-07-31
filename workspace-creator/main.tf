@@ -64,7 +64,7 @@ resource "tfe_workspace_run" "downstream" {
 
   apply {
     # Fire and Forget
-    wait_for_run = false
+    wait_for_run = true
     # auto-apply
     manual_confirm = false
   }
