@@ -66,13 +66,6 @@ resource "tfe_workspace_run" "downstream" {
     # Fire and Forget
     wait_for_run = false
     # auto-apply
-    manual_confirm = true
-  }
-
- destroy {
-    # Wait for destroy before doing anything else
-    wait_for_run = true
-    # auto-apply
-    manual_confirm = true
+    manual_confirm = false
   }
 }
