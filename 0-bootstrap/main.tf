@@ -10,7 +10,7 @@ terraform {
 }
 
 variable "tfc_org" {
-  default = "fancycorp"
+  default = "RPTData"
 }
 
 provider "tfe" {
