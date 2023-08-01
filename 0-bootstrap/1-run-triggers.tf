@@ -14,7 +14,7 @@ resource "tfe_workspace" "run-triggers-upstream-a" {
   working_directory = "upstream-downstream"
 
   vcs_repo {
-    identifier         = "hashi-strawb/multispace-example"
+    identifier         = "rptcloud/multispace-example"
     ingress_submodules = false
     oauth_token_id     = data.tfe_oauth_client.client.oauth_token_id
   }
@@ -44,7 +44,7 @@ resource "tfe_workspace" "run-triggers-upstream-b" {
   working_directory = "upstream-downstream"
 
   vcs_repo {
-    identifier         = "hashi-strawb/multispace-example"
+    identifier         = "rptcloud/multispace-example"
     ingress_submodules = false
     oauth_token_id     = data.tfe_oauth_client.client.oauth_token_id
   }
@@ -74,7 +74,7 @@ resource "tfe_workspace" "run-triggers-downstream" {
   working_directory = "upstream-downstream"
 
   vcs_repo {
-    identifier         = "hashi-strawb/multispace-example"
+    identifier         = "rptcloud/multispace-example"
     ingress_submodules = false
     oauth_token_id     = data.tfe_oauth_client.client.oauth_token_id
   }
