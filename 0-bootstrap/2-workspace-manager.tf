@@ -15,7 +15,7 @@ resource "tfe_workspace" "ws-creator-upstream" {
   working_directory = "workspace-creator"
 
   vcs_repo {
-    identifier         = "hashi-strawb/multispace-example"
+    identifier         = "rptcloud/multispace-example"
     ingress_submodules = false
     oauth_token_id     = data.tfe_oauth_client.client.oauth_token_id
   }
