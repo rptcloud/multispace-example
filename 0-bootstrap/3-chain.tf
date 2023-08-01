@@ -26,7 +26,7 @@ resource "tfe_workspace" "chain" {
   working_directory = "upstream-downstream"
 
   vcs_repo {
-    identifier         = "hashi-strawb/multispace-example"
+    identifier         = "rptcloud/multispace-example"
     ingress_submodules = false
     oauth_token_id     = data.tfe_oauth_client.client.oauth_token_id
   }
@@ -92,7 +92,7 @@ resource "tfe_workspace" "chain-runner" {
   working_directory = "chain-runner"
 
   vcs_repo {
-    identifier         = "hashi-strawb/multispace-example"
+    identifier         = "rptcloud/multispace-example"
     ingress_submodules = false
     oauth_token_id     = data.tfe_oauth_client.client.oauth_token_id
   }
